@@ -7,7 +7,7 @@ Write-Host -ForegroundColor Green "|  __/ _` | '_ ` _ \| | | | |"
 Write-Host -ForegroundColor Green "| | | (_| | | | | | | | |_| |"
 Write-Host -ForegroundColor Green "|_|  \__,_|_| |_| |_|_|\__, |"
 Write-Host -ForegroundColor Green "       Downloader       __/ |"
-Write-Host -ForegroundColor Green "      af Novas far     |___/ "
+Write-Host -ForegroundColor Green "  af Novas og Vidas far|___/ "
 
 $username = Read-Host -Prompt "Indtast Famly brugernavn/email og tryk Enter"
 $password = Read-Host -Prompt "Indtast Famly password og tryk Enter"
