@@ -1,6 +1,6 @@
 # FamlyDownloader
 
-Powershell script til at downloade alle billeder hvori dit/dine barn/børn er blevet tagget på Famly.
+Powershell script til at downloade alle billeder fra Famly hvori dit/dine barn/børn er blevet tagget på Famly.
 
 # Sådan gør du
  Klik på FamlyDownloader.ps1 herover. Tryk dernæst på Raw knappen øverst til højre. Du skulle nu blot se en masse tekst. 
