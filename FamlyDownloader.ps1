@@ -13,7 +13,7 @@ $username = Read-Host -Prompt "Indtast Famly brugernavn/email og tryk Enter"
 $password = Read-Host -Prompt "Indtast Famly password og tryk Enter"
 $choice = Read-Host -Prompt "Tryk u for at downloade billeder af udmeldte børn, i for indmeldte børn, og tryk Enter"
 
-
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 
 Write-Host "Logger ind... "
