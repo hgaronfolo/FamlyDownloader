@@ -8,6 +8,7 @@ Write-Host -ForegroundColor Green "| | | (_| | | | | | | | |_| |"
 Write-Host -ForegroundColor Green "|_|  \__,_|_| |_| |_|_|\__, |"
 Write-Host -ForegroundColor Green "       Downloader       __/ |"
 Write-Host -ForegroundColor Green "  af Novas og Vidas far|___/ "
+Write-Host -ForegroundColor Green "  (modificeret af Herbert til at køre på Linux/Mac)|___/ "
 
 $username = Read-Host -Prompt "Indtast Famly brugernavn/email og tryk Enter"
 $password = Read-Host -Prompt "Indtast Famly password og tryk Enter"
@@ -66,7 +67,7 @@ if($choice -eq 'u')
             $location = $images.GetValue($i) | select -ExpandProperty url_big
             Write-Host -NoNewline "Downloader "
             Write-Host -ForegroundColor Green $location
-            wget -Uri $location -OutFile ${out}\${currentKid}\${i}.jpg
+            wget -O ${out}/${line}/${i}.jpg $location
         }
         Write-Host "Download udført"
     }
@@ -92,7 +93,7 @@ else
             $location = $images.GetValue($i) | select -ExpandProperty url_big
             Write-Host -NoNewline "Downloader "
             Write-Host -ForegroundColor Green $location
-            wget -Uri $location -OutFile ${out}\${line}\${i}.jpg
+            wget -O ${out}/${line}/${i}.jpg $location
         }
         Write-Host "Download udført"
     }
